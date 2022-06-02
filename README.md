@@ -68,24 +68,22 @@ https://www.evernote.com/l/AAUycYHe8zFOSaIO1gziA8TGPYjJy_-OIUw
 https://api.instagram.com/oauth/authorize?client_id=【InstagramアプリID】&redirect_uri=【コールバックURL】&scope=user_profile,user_media&response_type=code
 
 ログイン認証した後にコールバックURLにリダイレクトされる。
-リダイレクトしたURLをコピー
-↓こんなURLになるはず
-【コールバックURL】?code=【240字程度のランダムな文字列】
 
+リダイレクトしたURLをコピー ↓こんなURLになるはず
+    【コールバックURL】?code=【240字程度のランダムな文字列】
 
+同梱の get_token.php にアクセスして入力項目を埋めて送信する。
 
+↓こちらからも使えます
+    https://www.troussier.jp/instagram_basic_display/get_token.php
 
-https://api.instagram.com/oauth/authorize?client_id=401665644802113&redirect_uri=https://www.troussier.jp/&scope=user_profile,user_media&response_type=code
+ユーザートークンを取得できます。
 
-https://troussier.jp/?code=AQDnxRkwvJxAfEKNTgJdQ8V2c0Ej3mPKm5Iw09yrNWRyXd6xVtvtGMqNxNEcZCAh7qx1WToTuMrUUPo9Ww3wkJvkwGnRqcHTfnFr6BhY3xfAnKpiwNi9PI0nCFNKEMUE98rx6l0_J8auRxfxHHQILs4HlOv6Yxk1q6ANAtoTtGmd7XRoOrymbwtySgl5oHtdOh5z9n2EjHAv0BxdNa6-oFpIDQ2cup_IMT7Y7-fbPWn4GQ#_
+## ユーザートークンの使用
+ユーザートークンを同梱の token.txt に入力します
 
+上記 token.txt と、同梱の generate_instagram_json.php をアップします。
 
+generate_instagram_json.php にアクセスすると instagram.json が生成されます。
 
-https://graph.instagram.com/access_token?grant_type=ig_exchange_token&client_secret=dc758d82e51e26cb64b2ee37e19363ee&access_token=AQBGuhFx00l8RZXlj44yGrHh7a_ZytLTyvEOGO8Ih7zuuH23ucaNZqlHED4wSkneSHd-1VOMOhWDBSyqks14jAVj7sDC8aLbvRy_ubowDjGQgetrep3GhxflGHpMypESHYr8I0kDl_5nWr_2eMli95ZlOnDzQqr1EmFrQmUM3HegN_hnocNuRv1I-Ov7JC6mRPgUSA83tqN0OFpw0t7WfH9FFp-EIh_vadcjTjNP7sy7mw
-
-
-
-
-
-
-
+Let's enjoy!!
