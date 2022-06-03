@@ -58,23 +58,28 @@ https://www.evernote.com/l/AAUjgK2mkpFI1qXlU9jP0s__fIBa-iYbvB4
 https://www.evernote.com/l/AAUGquSE3Q9Ow6jIdxBfGbQcRyn4GQ2dpzM
 
 ## Instagramにアクセスし設定画面から招待を承認する
-https://www.instagram.com/accounts/manage_access/
+    https://www.instagram.com/accounts/manage_access/
+
 上記URLにアクセス
+
 「テスターへのご招待」をクリックしたのち、「承認する」ボタンをクリック
 https://www.evernote.com/l/AAUycYHe8zFOSaIO1gziA8TGPYjJy_-OIUw
 
 ## ユーザートークンの発行
 「InstagramアプリID」と「コールバックURL」を下記のURLにあてはめ、アクセスする。
-https://api.instagram.com/oauth/authorize?client_id=【InstagramアプリID】&redirect_uri=【コールバックURL】&scope=user_profile,user_media&response_type=code
+
+    https://api.instagram.com/oauth/authorize?client_id=【InstagramアプリID】&redirect_uri=【コールバックURL】&scope=user_profile,user_media&response_type=code
 
 ログイン認証した後にコールバックURLにリダイレクトされる。
 
 リダイレクトしたURLをコピー ↓こんなURLになるはず
+
     【コールバックURL】?code=【240字程度のランダムな文字列】
 
 同梱の get_token.php にアクセスして入力項目を埋めて送信する。
 
 ↓こちらからも使えます
+
     https://www.troussier.jp/instagram_basic_display/get_token.php
 
 ユーザートークンを取得できます。
