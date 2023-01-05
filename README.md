@@ -91,4 +91,8 @@ https://www.evernote.com/l/AAUycYHe8zFOSaIO1gziA8TGPYjJy_-OIUw
 
 generate_instagram_json.php にアクセスすると instagram.json が生成されます。
 
+## 定期的なJSON生成
+
+cron を使用して generate_instagram_json.php を定期実行してください。（generate_instagram_json.php には JSON ファイルが生成されてから4時間以上経過していれば再生成するように記述しています。）
+
 Let's enjoy!!
